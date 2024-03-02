@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+</head>
+<body>
+    <form asp-action="AddConfirmArticle">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label class="col-form-label">Title</label>
+            </div>
+            <div class="col-auto">
+                <input class="form-control" name="title">
+            </div>
+            <div class="col-auto">
+                <label class="col-form-label">Category</label>
+            </div>
+            <div class="col-auto">
+                <input class="form-control" name="category">
+            </div>
+            <div class="col-auto">
+                <label class="col-form-label">Content</label>
+            </div>
+            <div class="col-auto">
+                <input class="form-control" name="content">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" type="file" id="formFile" name="image">
+            </div>
+        </div>
+    </form>
+
+</body>

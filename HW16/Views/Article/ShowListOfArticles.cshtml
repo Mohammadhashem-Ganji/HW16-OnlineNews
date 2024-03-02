@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+</head>
+<body>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewData["articles"] as List<Tbl_Article>)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@item.Title</td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</body>
